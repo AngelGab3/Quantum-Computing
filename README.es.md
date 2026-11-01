@@ -1,13 +1,13 @@
 <div align="center">
 
 # Computación Cuántica
-### *De los Fundamentos Matemáticos a la Simulación NISQ y Hardware Físico*
+### *Curva de Aprendizaje Personal: De los Fundamentos Teóricos a la Realidad NISQ*
 
+[![Autor](https://img.shields.io/badge/Autor-Gabriel_Velázquez-0052CC?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AngelGab3)
 [![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Qiskit](https://img.shields.io/badge/Qiskit-1.0+-6929C4?style=for-the-badge&logo=qiskit&logoColor=white)](https://qiskit.org/)
 [![Cirq](https://img.shields.io/badge/Google_Cirq-1.3+-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://quantumai.google/cirq)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
-[![Taller](https://img.shields.io/badge/UDLAP-Verano_STEM_2026-006341?style=for-the-badge)](https://www.udlap.mx/)
 [![Licencia](https://img.shields.io/badge/Licencia-MIT-yellow?style=for-the-badge)](LICENSE)
 
 **Idioma / Language:** [Español (Actual)](README.es.md) &nbsp;|&nbsp; [English](README.md)
@@ -18,11 +18,13 @@
 
 ## Visión General
 
-Este repositorio contiene una colección modular de implementaciones y material didáctico de computación cuántica originados en el taller **Verano STEM UDLAP 2026** (*"Una Brevísima Introducción a la Computación Cuántica"*).
+Este repositorio constituye el registro personal de la curva de aprendizaje, notas de estudio e implementaciones de investigación en computación cuántica de **Gabriel Velázquez** (*Lic. en Física*).
 
-El repositorio conecta la mecánica cuántica analítica con el desarrollo moderno de software cuántico mediante dos herramientas centrales:
-* **IBM Qiskit**: Derivaciones rigurosas, tomografía de matrices de densidad, modelado realista de ruido NISQ ($T_1, T_2$, error despolarizante) y transpilación a procesadores físicos.
-* **Google Cirq**: Prototipado de algoritmos, generación cuántica de números aleatorios (QRNG), convergencia de la regla de Born y teletransportación cuántica paramétrica.
+El proyecto documenta la progresión desde el formalismo de la mecánica cuántica (espacios de Hilbert, notación de Dirac, operadores unitarios y productos tensoriales) hasta la ingeniería práctica de algoritmos y circuitos en dos marcos de vanguardia:
+* **IBM Qiskit**: Derivaciones analíticas, representación de subsistemas en la esfera de Bloch, modelado realista de ruido NISQ ($T_1, T_2$, despolarización), tomografía cuántica de estados y transpilación para hardware físico de IBM.
+* **Google Cirq**: Prototipado algorítmico, convergencia estadística de la regla de Born mediante la ley de los grandes números, generador cuántico de números aleatorios (QRNG) y teletransportación paramétrica.
+
+Adicionalmente, se preserva en el repositorio el material en diapositivas del taller introductorio *"Una Brevísima Introducción a la Computación Cuántica"* impartido en el Verano STEM UDLAP 2026, desarrollado en colaboración con Martha Heredia y Rosh Guadiana.
 
 ---
 
@@ -30,9 +32,9 @@ El repositorio conecta la mecánica cuántica analítica con el desarrollo moder
 
 ```text
 Quantum-Computing/
-├── qiskit/        # Implementaciones en IBM Qiskit y análisis de hardware NISQ
+├── qiskit/        # Implementaciones personales en IBM Qiskit y análisis de hardware NISQ
 ├── cirq/          # Experimentos algorítmicos y simulaciones en Google Cirq
-├── slides/        # Presentación del taller en Verano STEM UDLAP 2026
+├── slides/        # Presentación del taller impartido en Verano STEM UDLAP 2026
 ├── requirements.txt
 ├── .gitignore
 ├── LICENSE
@@ -45,23 +47,24 @@ Quantum-Computing/
 ## Módulos y Carpetas
 
 ### 1. [Módulo IBM Qiskit](qiskit/)
-Estudios teóricos y de hardware cuántico:
-* [`First_Steps.ipynb`](qiskit/First_Steps.ipynb): Preparación del estado de Bell $\vert\Phi^+\rangle$, multivectores en la esfera de Bloch, modelo de ruido para `ibmq_lima`, tomografía de estado, cálculo de fidelidad y transpilación a hardware de IBM Quantum.
-* [`Quantum_Teleportation.ipynb`](qiskit/Quantum_Teleportation.ipynb): Derivación matemática e implementación del circuito de teletransportación de 3 qubits con correcciones condicionales de Pauli.
+Notas de estudio personal centradas en rigor matemático, física de estados y hardware real:
+* [`First_Steps.ipynb`](qiskit/First_Steps.ipynb): Evolución del estado entrelazado de Bell $\vert\Phi^+\rangle$, análisis del estado reducido en la esfera de Bloch, modelo de ruido para `ibmq_lima`, tomografía de estado, cálculo de fidelidad y transpilación a compuertas nativas $\{cx, id, rz, sx, x\}$.
+* [`Quantum_Teleportation.ipynb`](qiskit/Quantum_Teleportation.ipynb): Derivación analítica completa y circuito de teletransportación de 3 qubits con correcciones condicionales de Pauli.
 * Documentación detallada: [qiskit/README.md](qiskit/README.md).
 
 ### 2. [Módulo Google Cirq](cirq/)
-Simulaciones de física estadística y diseño algorítmico:
-* [`Bell_State_with_Cirq.ipynb`](cirq/Bell_State_with_Cirq.ipynb): Generación de pares EPR mediante `LineQubit`.
-* [`Hadamard_Transform_with_Cirq.ipynb`](cirq/Hadamard_Transform_with_Cirq.ipynb): Superposición de un qubit en `GridQubit`.
-* [`Measurement_Convergence_with_Cirq.ipynb`](cirq/Measurement_Convergence_with_Cirq.ipynb): Validación de la ley de los grandes números para la regla de Born ($N \in [10, 1000]$).
-* [`Quantum_Number_Generator_with_Cirq.ipynb`](cirq/Quantum_Number_Generator_with_Cirq.ipynb): Generador Cuántico de Números Aleatorios (QRNG) con escalamiento logarítmico y muestreo por rechazo.
-* [`Quantum_Teleportation_with_Cirq.ipynb`](cirq/Quantum_Teleportation_with_Cirq.ipynb): Teletransportación paramétrica con compuertas dinámicas controladas.
+Diseño algorítmico y física estadística computacional:
+* [`Bell_State_with_Cirq.ipynb`](cirq/Bell_State_with_Cirq.ipynb): Creación de pares EPR en registros lineales `cirq.LineQubit`.
+* [`Hadamard_Transform_with_Cirq.ipynb`](cirq/Hadamard_Transform_with_Cirq.ipynb): Superposición en grilla bidimensional con `cirq.GridQubit`.
+* [`Measurement_Convergence_with_Cirq.ipynb`](cirq/Measurement_Convergence_with_Cirq.ipynb): Demostración empírica de la convergencia asintótica de la regla de Born ($N \in [10, 1000]$).
+* [`Quantum_Number_Generator_with_Cirq.ipynb`](cirq/Quantum_Number_Generator_with_Cirq.ipynb): Generador Cuántico de Números Aleatorios (QRNG) en rangos arbitrarios mediante muestreo por rechazo.
+* [`Quantum_Teleportation_with_Cirq.ipynb`](cirq/Quantum_Teleportation_with_Cirq.ipynb): Teletransportación cuántica modular con compuertas dinámicas controladas.
 * Documentación detallada: [cirq/README.md](cirq/README.md).
 
 ### 3. [Diapositivas del Taller](slides/)
-Presentación oficial de 57 diapositivas con los fundamentos teóricos, límites de la Ley de Moore, reto de Feynman, álgebra lineal cuántica, interferencia y plataformas de hardware.
-* Temario completo: [slides/README.md](slides/README.md).
+Presentación de 57 diapositivas *"Una Brevísima Introducción a la Computación Cuántica"* impartida en el Verano STEM UDLAP 2026.
+* Ponentes: Gabriel Velázquez, Martha Heredia, Rosh Guadiana.
+* Temario y estructura: [slides/README.md](slides/README.md).
 
 ---
 
@@ -91,13 +94,16 @@ jupyter notebook
 
 ---
 
-## Equipo y Reconocimientos
+## Autoría y Colaboradores
 
-* **Gabriel Velázquez** — *Lic. en Física* (Autor principal e implementaciones en notebooks)
-* **Martha Heredia** — *Ing. en Sistemas Computacionales* (Instructora del taller)
-* **Rosh Guadiana** — *Ing. Biomédica* (Instructor del taller)
+* **Gabriel Velázquez** — *Lic. en Física*  
+  Autor del repositorio, notas de estudio, derivaciones matemáticas e implementaciones en código.
 
-Desarrollado para el taller **Verano STEM UDLAP 2026** (*Universidad de las Américas Puebla*).
+### Colaboradoras en Taller (Diapositivas)
+* **Martha Heredia** — *Ing. en Sistemas Computacionales*  
+  Coautora y coponente de la presentación del taller *"Una Brevísima Introducción a la Computación Cuántica"* ([`slides/`](slides/)).
+* **Rosh Guadiana** — *Ing. Biomédica*  
+  Coautora y coponente de la presentación del taller *"Una Brevísima Introducción a la Computación Cuántica"* ([`slides/`](slides/)).
 
 ---
 

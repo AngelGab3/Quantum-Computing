@@ -1,6 +1,6 @@
 # IBM Qiskit Track: Deep Dive & Hardware Execution
 
-This directory contains advanced implementations of quantum information protocols using IBM Qiskit, spanning exact mathematical derivations, ideal statevector simulations, realistic NISQ hardware noise modeling, and execution workflows on physical superconducting processors.
+This directory contains personal study notes and advanced implementations of quantum information protocols by Gabriel Velázquez using IBM Qiskit, spanning exact mathematical derivations, ideal statevector simulations, realistic NISQ hardware noise modeling, and execution workflows on physical superconducting processors.
 
 ---
 

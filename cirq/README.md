@@ -1,6 +1,6 @@
 # Google Cirq Track: Algorithmic Prototyping & Simulations
 
-This directory contains implementations of foundational quantum algorithms and statistical simulation experiments developed with Google Cirq.
+This directory contains personal study notes and implementations of foundational quantum algorithms and statistical simulation experiments by Gabriel Velázquez using Google Cirq.
 
 ---
 
