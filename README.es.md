@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌌 Computación Cuántica
+# Computación Cuántica
 ### *De los Fundamentos Matemáticos a la Simulación NISQ y Hardware Físico*
 
 [![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
@@ -10,14 +10,13 @@
 [![Taller](https://img.shields.io/badge/UDLAP-Verano_STEM_2026-006341?style=for-the-badge)](https://www.udlap.mx/)
 [![Licencia](https://img.shields.io/badge/Licencia-MIT-yellow?style=for-the-badge)](LICENSE)
 
-**🌐 Selector de Idioma / Language Selector:**  
-[🇪🇸 **Español** (Actual)](README.es.md) &nbsp;|&nbsp; [🇺🇸 **English**](README.md)
+**Idioma / Language:** [Español (Actual)](README.es.md) &nbsp;|&nbsp; [English](README.md)
 
 ---
 
 </div>
 
-## 📌 Visión General
+## Visión General
 
 Este repositorio contiene una colección completa, pedagógica y rigurosa de **algoritmos, simulaciones y diapositivas de computación cuántica** desarrollados como notas de estudio y material práctico para el taller **Verano STEM UDLAP 2026** (*"Una Brevísima Introducción a la Computación Cuántica"*).
 
@@ -27,22 +26,22 @@ El repositorio conecta la **mecánica cuántica teórica** (notación de Dirac, 
 
 ---
 
-## 🗂 Arquitectura del Repositorio
+## Arquitectura del Repositorio
 
 ```text
 Quantum-Computing/
-├── 📄 A very brief introduction to quantum computing (workshop slides).pdf
-├── 📓 First_Steps.ipynb
-├── 📓 Quantum_Teleportation.ipynb
-├── 📓 Bell_State_with_Cirq.ipynb
-├── 📓 Hadamard_Transform_with_Cirq.ipynb
-├── 📓 Measurement_Convergence_with_Cirq.ipynb
-├── 📓 Quantum_Number_Generator_with_Cirq.ipynb
-├── 📓 Quantum_Teleportation_with_Cirq.ipynb
-├── 📋 requirements.txt
-├── 🛡️ .gitignore
-├── 📖 README.md          <-- (Documentación en inglés)
-└── 📖 README.es.md       <-- (Documentación en español)
+├── A very brief introduction to quantum computing (workshop slides).pdf
+├── First_Steps.ipynb
+├── Quantum_Teleportation.ipynb
+├── Bell_State_with_Cirq.ipynb
+├── Hadamard_Transform_with_Cirq.ipynb
+├── Measurement_Convergence_with_Cirq.ipynb
+├── Quantum_Number_Generator_with_Cirq.ipynb
+├── Quantum_Teleportation_with_Cirq.ipynb
+├── requirements.txt
+├── .gitignore
+├── README.md          <-- (Documentación en inglés)
+└── README.es.md       <-- (Documentación en español)
 ```
 
 ### Matriz de Módulos y Notebooks
@@ -60,7 +59,7 @@ Quantum-Computing/
 
 ---
 
-## 🔬 Análisis Detallado de los Módulos
+## Análisis Detallado de los Módulos
 
 ```mermaid
 flowchart TD
@@ -70,8 +69,8 @@ flowchart TD
     end
 
     subgraph QISKIT["Ecosistema IBM Qiskit (Profundización y Hardware)"]
-        Q1["First_Steps.ipynb<br/>• Preparación del Estado de Bell<br/>• Vector de Estado y Esfera de Bloch<br/>• Modelado de Ruido NISQ (T1, T2, Despolarización)<br/>• Transpilación a Hardware Físico de IBM"]
-        Q2["Quantum_Teleportation.ipynb<br/>• Protocolo de 3 Qubits<br/>• Medición de Bell<br/>• Corrección Unitaria Condicional"]
+        Q1["First_Steps.ipynb<br/>Preparación del Estado de Bell<br/>Vector de Estado y Esfera de Bloch<br/>Modelado de Ruido NISQ (T1, T2, Despolarización)<br/>Transpilación a Hardware Físico de IBM"]
+        Q2["Quantum_Teleportation.ipynb<br/>Protocolo de 3 Qubits<br/>Medición de Bell<br/>Corrección Unitaria Condicional"]
     end
 
     subgraph CIRQ["Ecosistema Google Cirq (Prototipado Algorítmico)"]
@@ -179,7 +178,7 @@ Implementación detallada del célebre protocolo propuesto por Bennett et al. (1
 
 ---
 
-### Eje 3: Diapositivas del Taller (`workshop slides.pdf`)
+### Eje 3: Diapositivas del Taller (workshop slides.pdf)
 
 Presentación oficial de 57 diapositivas utilizada en el **Verano STEM UDLAP 2026**:
 
@@ -211,7 +210,7 @@ Presentación oficial de 57 diapositivas utilizada en el **Verano STEM UDLAP 202
 
 ---
 
-## 🚀 Guía de Instalación y Uso
+## Guía de Instalación y Uso
 
 ### Requisitos Previos
 * **Python 3.9, 3.10, 3.11 o 3.12**
@@ -263,7 +262,7 @@ QiskitRuntimeService.save_account(
 
 ---
 
-## 👥 Equipo y Reconocimientos
+## Equipo y Reconocimientos
 
 Este repositorio fue creado como recurso educativo e investigación para el taller:
 
@@ -275,6 +274,6 @@ Impartido en el marco de **Verano STEM UDLAP 2026** (*Universidad de las Améric
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto es de código abierto bajo la [Licencia MIT](LICENSE).

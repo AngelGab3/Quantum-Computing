@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌌 Quantum Computing
+# Quantum Computing
 ### *From Mathematical Foundations to NISQ Simulation & Physical Hardware*
 
 [![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
@@ -10,14 +10,13 @@
 [![Workshop](https://img.shields.io/badge/UDLAP-Verano_STEM_2026-006341?style=for-the-badge)](https://www.udlap.mx/)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-**🌐 Language Selector / Selector de Idioma:**  
-[🇺🇸 **English** (Current)](README.md) &nbsp;|&nbsp; [🇪🇸 **Español**](README.es.md)
+**Language / Idioma:** [English (Current)](README.md) &nbsp;|&nbsp; [Español](README.es.md)
 
 ---
 
 </div>
 
-## 📌 Executive Overview
+## Executive Overview
 
 This repository contains a comprehensive, pedagogical, and rigorous collection of **quantum computing algorithms, simulations, and lecture materials** developed as study notes and workshop materials for the **Verano STEM UDLAP 2026** workshop (*"Una Brevísima Introducción a la Computación Cuántica"*).
 
@@ -27,22 +26,22 @@ The repository bridges the gap between **abstract quantum mechanics** (Dirac not
 
 ---
 
-## 🗂 Repository Architecture
+## Repository Architecture
 
 ```text
 Quantum-Computing/
-├── 📄 A very brief introduction to quantum computing (workshop slides).pdf
-├── 📓 First_Steps.ipynb
-├── 📓 Quantum_Teleportation.ipynb
-├── 📓 Bell_State_with_Cirq.ipynb
-├── 📓 Hadamard_Transform_with_Cirq.ipynb
-├── 📓 Measurement_Convergence_with_Cirq.ipynb
-├── 📓 Quantum_Number_Generator_with_Cirq.ipynb
-├── 📓 Quantum_Teleportation_with_Cirq.ipynb
-├── 📋 requirements.txt
-├── 🛡️ .gitignore
-├── 📖 README.md          <-- (English documentation)
-└── 📖 README.es.md       <-- (Documentación en Español)
+├── A very brief introduction to quantum computing (workshop slides).pdf
+├── First_Steps.ipynb
+├── Quantum_Teleportation.ipynb
+├── Bell_State_with_Cirq.ipynb
+├── Hadamard_Transform_with_Cirq.ipynb
+├── Measurement_Convergence_with_Cirq.ipynb
+├── Quantum_Number_Generator_with_Cirq.ipynb
+├── Quantum_Teleportation_with_Cirq.ipynb
+├── requirements.txt
+├── .gitignore
+├── README.md          <-- (English documentation)
+└── README.es.md       <-- (Documentación en Español)
 ```
 
 ### Module Classification Matrix
@@ -60,7 +59,7 @@ Quantum-Computing/
 
 ---
 
-## 🔬 In-Depth Notebook Dossiers
+## In-Depth Notebook Dossiers
 
 ```mermaid
 flowchart TD
@@ -70,8 +69,8 @@ flowchart TD
     end
 
     subgraph QISKIT["IBM Qiskit Track (Deep Dive & Hardware)"]
-        Q1["First_Steps.ipynb<br/>• Bell State Preparation<br/>• Statevector & Bloch Multivector<br/>• NISQ Noise (T1/T2, Depolarizing)<br/>• IBM Quantum Hardware Transpilation"]
-        Q2["Quantum_Teleportation.ipynb<br/>• 3-Qubit Protocol<br/>• Bell Measurement<br/>• Conditional Unitary Corrections"]
+        Q1["First_Steps.ipynb<br/>Bell State Preparation<br/>Statevector & Bloch Multivector<br/>NISQ Noise (T1/T2, Depolarizing)<br/>IBM Quantum Hardware Transpilation"]
+        Q2["Quantum_Teleportation.ipynb<br/>3-Qubit Protocol<br/>Bell Measurement<br/>Conditional Unitary Corrections"]
     end
 
     subgraph CIRQ["Google Cirq Track (Algorithmic Prototyping)"]
@@ -180,7 +179,7 @@ Implements the landmark protocol (Bennett et al., 1993) overcoming the constrain
 
 ---
 
-### Track 3: Workshop Slide Deck (`workshop slides.pdf`)
+### Track 3: Workshop Slide Deck (workshop slides.pdf)
 
 The repository includes the complete 57-slide presentation **"Una Brevísima Introducción a la Computación Cuántica"** delivered at **Verano STEM UDLAP 2026**:
 
@@ -213,7 +212,7 @@ The repository includes the complete 57-slide presentation **"Una Brevísima Int
 
 ---
 
-## 🚀 Getting Started & Installation
+## Getting Started & Installation
 
 ### Prerequisites
 * **Python 3.9, 3.10, 3.11, or 3.12**
@@ -265,7 +264,7 @@ QiskitRuntimeService.save_account(
 
 ---
 
-## 🛠 Dependencies & Tech Stack
+## Dependencies & Tech Stack
 
 All versions are specified in [`requirements.txt`](requirements.txt):
 
@@ -278,7 +277,7 @@ All versions are specified in [`requirements.txt`](requirements.txt):
 
 ---
 
-## 👥 Authors & Acknowledgments
+## Authors & Acknowledgments
 
 This repository was created as an educational resource and research study repository:
 
@@ -290,6 +289,6 @@ Presented and developed in collaboration with **Verano STEM UDLAP 2026** (*Unive
 
 ---
 
-## 📄 License
+## License
 
 This project is open-source and available under the [MIT License](LICENSE).
