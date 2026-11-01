@@ -18,7 +18,7 @@
 
 ## Overview
 
-This repository documents the personal quantum computing learning journey, study notes, and research implementations of **Gabriel Velázquez** (*Lic. en Física*).
+This repository documents my personal quantum computing learning journey, study notes, and research implementations
 
 The project is structured to track progression from fundamental quantum physics and mathematical formalism (Hilbert spaces, Dirac bra-ket algebra, tensor products) into hands-on quantum software engineering across two major quantum platforms:
 * **IBM Qiskit**: Analytical derivations, reduced density matrix representations on the Bloch sphere, realistic NISQ hardware noise modeling ($T_1, T_2$, gate depolarization), state tomography, and circuit transpilation for physical superconducting quantum devices.
